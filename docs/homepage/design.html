@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>עדי - ניהול משרד עורכי דין והנהלת חשבונות</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#3239a3",
+              "surface-container": "#eeeeee",
+              "surface-container-low": "#f3f3f4",
+              "on-tertiary-fixed-variant": "#82271c",
+              "tertiary-container": "#4d0000",
+              "surface-tint": "#4b53bc",
+              "on-surface": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e2e2e2",
+              "on-secondary-fixed": "#1b1c1c",
+              "tertiary-fixed-dim": "#ffb4a8",
+              "surface-variant": "#e2e2e2",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#d96756",
+              "secondary-fixed-dim": "#c8c6c6",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#e4e2e1",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary-fixed-variant": "#474747",
+              "on-primary-fixed": "#00006e",
+              "secondary": "#5f5e5e",
+              "inverse-primary": "#bfc2ff",
+              "inverse-on-surface": "#f0f1f1",
+              "error": "#ba1a1a",
+              "on-primary-container": "#777eea",
+              "background": "#f9f9f9",
+              "tertiary-fixed": "#ffdad4",
+              "primary": "#00003c",
+              "error-container": "#ffdad6",
+              "tertiary": "#220000",
+              "on-surface-variant": "#464653",
+              "on-error-container": "#93000a",
+              "surface": "#f9f9f9",
+              "on-background": "#1a1c1c",
+              "on-primary": "#ffffff",
+              "outline": "#767684",
+              "inverse-surface": "#2f3131",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#410000",
+              "secondary-container": "#e4e2e1",
+              "surface-dim": "#dadada",
+              "surface-bright": "#f9f9f9",
+              "primary-fixed": "#e0e0ff",
+              "primary-container": "#000080",
+              "outline-variant": "#c6c5d5",
+              "on-secondary-container": "#656464",
+              "primary-fixed-dim": "#bfc2ff"
+            },
+            fontFamily: {
+              "heebo": ["Heebo", "sans-serif"],
+              "headline": ["Heebo", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Heebo', sans-serif;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #00003c 0%, #000080 100%);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-lg shadow-primary/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-primary">עדי</span>
+<div class="hidden xl:flex items-center gap-6">
+<a class="text-primary border-b-2 border-primary font-bold text-sm tracking-wide transition-colors duration-200" href="#">ניהול לקוחות</a>
+<a class="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">ניהול מסמכים</a>
+<a class="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">ניהול יומנים</a>
+<a class="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">הופעות בבבמ"ש</a>
+<a class="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">ניהול מטלות</a>
+<a class="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">הנהלת חשבונות</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block text-primary font-bold text-sm transition-transform scale-95 active:scale-90">צור קשר</button>
+<button class="primary-gradient text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm transition-transform scale-95 active:scale-90 shadow-md">בקשת דמו</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 px-8 max-w-7xl mx-auto overflow-hidden">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h1 class="text-5xl lg:text-6xl font-black text-primary leading-tight">
+                    עדי: הפתרון המקיף לניהול משרד עורכי דין והנהלת חשבונות.
+                </h1>
+<p class="text-xl text-on-secondary-fixed-variant max-w-lg leading-relaxed">
+                    מערכת חכמה ואינטואיטיבית המייעלת את זרימת העבודה המשפטית שלך, החל מניהול תיקים ועד להפקת דוחות פיננסיים מורכבים במקום אחד.
+                </p>
+<div class="flex flex-wrap items-center gap-6">
+<button class="primary-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-lg transition-transform scale-95 active:scale-90 shadow-xl">
+                        צור קשר עכשיו
+                    </button>
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">call</span>
+<span class="text-2xl font-black tracking-tight" dir="ltr">03-1234567</span>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary-fixed/30 rounded-full blur-3xl -z-10"></div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-2xl border border-outline-variant/20">
+<img alt="Legal Dashboard Interface" class="rounded-xl w-full" data-alt="Professional legal practice management dashboard with clean charts, case lists, and calendar view on a high-end monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiu6OKyF3z4cqWd3-eVHfScnF1qzGT8zRysS5mImHK4GnikMDgZoLRFMtjnSqyi2qsCDpwByA5BhyPceakpuMWiznshICDo9taNqslXj3xbq7MDKeOa_oETxveJj3BhN1ydL7ls76G6HSw-Cw3CSR431ig7uSaYDhgc8t188HbwpmVBnNboh0UoNUa-nDfUnjcIEwpKoH06SHIvq_7MMC5BJ0M8z1Pe7LIIzMq1Xh1uSof3gcCF791f8aotJ8kBZoK2udMOS4Tcy-C"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Grid -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-3xl font-black text-primary">כל מה שהמשרד שלך צריך, במערכת אחת</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Module 1 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="group">group</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">ניהול לקוחות ותיקים</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">תיעוד מלא של כל היסטוריית הלקוח, פרטי הקשר והקשרים בין התיקים השונים במשרד.</p>
+</div>
+<!-- Module 2 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="description">description</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">ניהול מסמכים</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">ארכיון דיגיטלי חכם הכולל סריקה, תיוק אוטומטי וחיפוש טקסטואלי מהיר בתוך כל מסמכי התיק.</p>
+</div>
+<!-- Module 3 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="calendar_month">calendar_month</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">ניהול יומנים</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">סנכרון מלא עם Outlook, ניהול מועדי בית משפט ופגישות צוות עם תזכורות אוטומטיות.</p>
+</div>
+<!-- Module 4 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="gavel">gavel</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">ניהול הופעות בבהמ"ש</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">ריכוז כל המידע לקראת דיונים, פרוטוקולים והחלטות שיפוטיות בצורה מסודרת ונגישה.</p>
+</div>
+<!-- Module 5 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="task_alt">task_alt</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">ניהול מטלות</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">הקצאת משימות לצוות, מעקב אחר לוחות זמנים ובדיקת סטטוס ביצוע בזמן אמת.</p>
+</div>
+<!-- Module 6 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="schedule">schedule</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">ניהול שעות עבודה</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">דיווח שעות קל ומהיר לפי לקוח ותיק, המאפשר חיוב מדויק ומעקב אחר רווחיות.</p>
+</div>
+<!-- Module 7 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="receipt_long">receipt_long</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">ניהול חשבונות עסקה</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">הפקת חשבונות עסקה, מעקב גבייה ושליחת תזכורות תשלום בצורה אוטומטית ומקצועית.</p>
+</div>
+<!-- Module 8 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="calculate">calculate</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">חישובים</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">מחשבונים משפטיים מובנים לריבית, הצמדה, אגרות בית משפט ופיצויי פיטורין.</p>
+</div>
+<!-- Module 9 -->
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">הנהלת חשבונות</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">מערכת הנהלת חשבונות מלאה המותאמת לצרכי עורכי דין ומאושרת על ידי רשות המסים.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Generation Section -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-12">
+<!-- Form 1: Support -->
+<div class="bg-surface-container p-10 rounded-2xl">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+<h2 class="text-2xl font-black text-primary">פתיחת קריאת שירות</h2>
+</div>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-bold text-primary mb-2">שם מלא</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary/40 py-3" placeholder="ישראל ישראלי" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-primary mb-2">מספר תיק (אופציונלי)</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary/40 py-3" placeholder="12345/24" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-primary mb-2">תיאור התקלה / הבקשה</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary/40 py-3 h-32" placeholder="כיצד נוכל לעזור?"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white font-bold rounded-lg transition-transform active:scale-95" type="submit">שלח בקשה</button>
+</form>
+</div>
+<!-- Form 2: Request Demo -->
+<div class="bg-primary text-white p-10 rounded-2xl shadow-xl shadow-primary/20">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-white text-3xl">drive_presentation</span>
+<h2 class="text-2xl font-black">תיאום דמו והצגת המערכת</h2>
+</div>
+<p class="mb-8 opacity-80">גלה כיצד "עדי" יכולה לשדרג את המשרד שלך. השאר פרטים ונחזור אליך בהקדם.</p>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold mb-2">שם מלא</label>
+<input class="w-full bg-white/10 border-white/20 rounded-lg focus:ring-2 focus:ring-white/40 py-3 text-white placeholder:text-white/40" placeholder="ישראל ישראלי" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2">שם המשרד</label>
+<input class="w-full bg-white/10 border-white/20 rounded-lg focus:ring-2 focus:ring-white/40 py-3 text-white placeholder:text-white/40" placeholder="כהן ושות' עו&quot;ד" type="text"/>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold mb-2">טלפון ליצירת קשר</label>
+<input class="w-full bg-white/10 border-white/20 rounded-lg focus:ring-2 focus:ring-white/40 py-3 text-white placeholder:text-white/40" placeholder="050-0000000" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2">דואר אלקטרוני</label>
+<input class="w-full bg-white/10 border-white/20 rounded-lg focus:ring-2 focus:ring-white/40 py-3 text-white placeholder:text-white/40" placeholder="office@law-firm.com" type="email"/>
+</div>
+</div>
+<button class="w-full py-4 bg-white text-primary font-bold rounded-lg transition-transform active:scale-95" type="submit">תיאום שיחת דמו</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200 py-20 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<span class="text-3xl font-black text-primary">עדי</span>
+<p class="text-on-secondary-fixed-variant leading-relaxed text-sm">המערכת המתקדמת ביותר בישראל לניהול משרדי עורכי דין, המשלבת טכנולוגיה עילית עם הבנה מעמיקה של הצרכים המשפטיים והחשבונאיים.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-white shadow-sm flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="w-10 h-10 bg-white shadow-sm flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">link</span></a>
+<a class="w-10 h-10 bg-white shadow-sm flex items-center justify-center rounded-full text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-primary">ניווט מהיר</h4>
+<ul class="space-y-3 text-sm text-on-secondary-fixed-variant">
+<li><a class="hover:text-primary transition-colors" href="#">אודות המערכת</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">מרכז הדרכה</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">בלוג וחדשות</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">צור קשר</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-primary">תמיכה ושירות</h4>
+<ul class="space-y-3 text-sm text-on-secondary-fixed-variant">
+<li><a class="hover:text-primary transition-colors" href="#">תמיכה טכנית</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">שאלות ותשובות</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">הורדות ותוכנות עזר</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">נגישות</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-primary">פרטי התקשרות</h4>
+<ul class="space-y-4 text-sm text-on-secondary-fixed-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>רחוב המנור 4, תל אביב יפו<br/>בניין העסקים, קומה 12</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<span dir="ltr">03-1234567</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span>support@adi-legal.co.il</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-slate-200 text-center text-xs text-slate-500">
+<p>© 2024 עדי - ניהול משרד עורכי דין והנהלת חשבונות. כל הזכויות שמורות. | <a class="underline" href="#">תנאי שימוש</a> | <a class="underline" href="#">מדיניות פרטיות</a></p>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 left-8 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50" href="https://wa.me/972500000000">
+<svg fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+</svg>
+</a>
+</body></html>
