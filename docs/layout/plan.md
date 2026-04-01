@@ -1,4 +1,4 @@
-# Layout Migration Plan: design.html → TanStack Start
+# Layout Migration Plan: design.html → TanStack Start.
 
 **Source:** `docs/homepage/design.html`
 **Target:** TanStack Start (React 19, file-based routing, Tailwind CSS 4)
