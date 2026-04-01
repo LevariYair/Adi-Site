@@ -8,7 +8,7 @@ export default function Header() {
             <a className="text-primary border-b-2 border-primary font-bold text-sm tracking-wide transition-colors duration-200" href="#">ניהול לקוחות</a>
             <a className="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">ניהול מסמכים</a>
             <a className="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">ניהול יומנים</a>
-            <a className="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">הופעות בבבמ&quot;ש</a>
+            <a className="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">הופעות בבמ&quot;ש</a>
             <a className="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">ניהול מטלות</a>
             <a className="text-slate-600 hover:text-primary transition-colors duration-200 font-bold text-sm tracking-wide" href="#">הנהלת חשבונות</a>
           </div>

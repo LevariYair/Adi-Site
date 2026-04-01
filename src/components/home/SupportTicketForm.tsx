@@ -27,6 +27,7 @@ export default function SupportTicketForm() {
             className="w-full bg-surface-container-high border-0 rounded-lg focus:ring-2 focus:ring-primary/40 py-3 px-3"
             placeholder="ישראל ישראלי"
             type="text"
+            required
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -46,6 +47,7 @@ export default function SupportTicketForm() {
           <textarea
             className="w-full bg-surface-container-high border-0 rounded-lg focus:ring-2 focus:ring-primary/40 py-3 px-3 h-32"
             placeholder="כיצד נוכל לעזור?"
+            required
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />

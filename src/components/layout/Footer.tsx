@@ -63,6 +63,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3">
               <span className="material-symbols-outlined text-primary text-xl">call</span>
+              {/* TODO: replace with real phone number */}
               <span dir="ltr">03-1234567</span>
             </li>
             <li className="flex items-center gap-3">

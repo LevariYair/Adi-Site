@@ -32,6 +32,7 @@ export default function DemoRequestForm() {
               className="w-full bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-white/40 py-3 px-3 text-white placeholder:text-white/40"
               placeholder="ישראל ישראלי"
               type="text"
+              required
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -54,6 +55,7 @@ export default function DemoRequestForm() {
               className="w-full bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-white/40 py-3 px-3 text-white placeholder:text-white/40"
               placeholder="050-0000000"
               type="tel"
+              required
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
@@ -64,6 +66,7 @@ export default function DemoRequestForm() {
               className="w-full bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-white/40 py-3 px-3 text-white placeholder:text-white/40"
               placeholder="office@law-firm.com"
               type="email"
+              required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />

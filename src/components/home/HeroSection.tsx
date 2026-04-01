@@ -16,6 +16,7 @@ export default function HeroSection() {
             </button>
             <div className="flex items-center gap-3 text-primary">
               <span className="material-symbols-outlined text-3xl">call</span>
+              {/* TODO: replace with real phone number */}
               <span className="text-2xl font-black tracking-tight" dir="ltr">
                 03-1234567
               </span>
@@ -26,6 +27,7 @@ export default function HeroSection() {
         <div className="relative">
           <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary-fixed/30 rounded-full blur-3xl -z-10" />
           <div className="bg-surface-container-lowest p-4 rounded-2xl shadow-2xl border border-outline-variant/20">
+            {/* TODO: replace with a local asset — this external URL may become unavailable */}
             <img
               alt="Legal Dashboard Interface"
               className="rounded-xl w-full"

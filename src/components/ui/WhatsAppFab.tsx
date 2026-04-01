@@ -1,4 +1,5 @@
 export default function WhatsAppFab() {
+  // TODO: replace 972500000000 with the real WhatsApp number
   return (
     <a
       className="fixed bottom-8 left-8 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50"
